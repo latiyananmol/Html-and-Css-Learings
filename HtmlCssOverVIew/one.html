@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverViewOfHtml and Css</title>
+    <style>
+        /* h1{
+            color: blue;
+        }
+        #unique{
+            background-color: blueviolet;
+        }
+        .common {
+            background-color: pink;
+        } */
+        /* .common p{
+            color: brown;
+        }
+        .common>p{
+            color: aqua;
+        } */
+
+        /* .common +p{
+            this is immediate sibling selector 
+            color: brown;
+        } */
+        /* this is how you will target general sibling  */
+        /* .common ~ h1{
+            color: darkgreen;
+        } */
+    /* this is attribute selector */
+    label[for]{
+        color:blue;
+    }
+    label[for="name"]{
+        /* because for is diffrent in all */
+        color: brown;
+    }
+    a[href="https://www.google.co.in/"]{
+        /* because href is diffrent in all  */
+        color: red;
+    }
+    input[type]{
+        background-color: purple;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Hello We are Learning Html </h1>
+    <p>this is para 1</p>
+    <!-- this is anchor tag -->
+    <a href="https://www.google.co.in/" target="_blank">Open Google Page</a>
+    <p id="unique">THis is unique styling of para</p>
+
+<div class="common">
+    this div is basically a division1 part of web page
+    <p>Pepcoding  </p>
+</div>
+<p> this is immediate sibling of the common class </p>
+<div class="common">
+    <div class="smthing1">smthing1
+
+        <p>this is para inside smthing1</p>
+    </div>
+<div class="smthing2">this is smthing 2</div>
+
+    This is division 2
+
+</div>
+<div class="common">
+    this is division 3
+
+</div>
+<h1>Hero this h1 is also general sibling of common class </h1>
+<p>this is not immediate</p>
+<h1> this h1 is general sibling of of common class </h1>
+
+<!-- now list tag is discussed below -->
+<ul>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+</ul>
+<ol>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+</ol>
+<img src="https://unsplash.com/photos/yudEIFgb9-U" alt=" this is img">
+<form action="">
+     <label for="name">Name</label>
+    <input type="text" id="name">
+    <label for="num">Number</label>
+    <input type="number" id="num">
+    <label for="emailid">EmailId</label>
+    <input type="email" id="emailid">
+    <label for="pass">Password</label>
+    <input type="password" id="pass">
+</form>
+    
+</body>
+</html>
