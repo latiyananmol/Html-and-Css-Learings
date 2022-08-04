@@ -1,0 +1,43 @@
+<!-- this contains inline and Block elements too -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .block{
+        color: red;
+    }
+    .inline-1{
+        background-color: pink;
+    }
+    .inline-2{
+        color:blue;
+    }
+.inline-block{
+    background-color: blue;
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    
+
+}
+</style>
+<body>
+NOTE:
+<!-- in block element we can  give height and width but in inline elemetn be can not 
+so if you want to give height and width in inline  you have to disply :inline-block   -->
+
+    <div class="block"> I am block element1</div>
+    <span class="inline-1"> I am inline1 </span>
+    <span class="inline-2">I am inline 2</span>
+    <div class="block"> I am block element </div>
+    <span class="inline-block">THis is inline block
+    
+    </span>
+    
+</body>
+</html>
